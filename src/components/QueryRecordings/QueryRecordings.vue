@@ -35,6 +35,7 @@
             variant="link"
             class="toggle-advanced-search-btn"
             @click="() => toggleAdvancedSearch()"
+            data-cy="advanced-search"
           >
             Advanced search
             <font-awesome-icon v-if="!advanced" :icon="['fas', 'caret-down']" />
@@ -55,6 +56,7 @@
         block
         variant="primary"
         @click="submit"
+        data-cy="search-button"
       >
         <span v-if="!disabled">Search</span>
         <span v-else>Searching...</span>
